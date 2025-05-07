@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .container {
+  display: flex;
+  width: 100%;
+}
+body .container button,
+body .container input,
+body .container .accept {
+  cursor: pointer;
+}
+body .container .left {
+  width: 70%;
+  background-image: url(./4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .container .right {
+  width: 30%;
+  padding: 2rem 2.3rem;
+}
+body .container .right .title {
+  margin: 1rem 0rem;
+}
+body .container .right .sign-up-container {
+  margin-top: 1.5rem;
+}
+body .container .right .sign-up-container .input-container {
+  margin-bottom: 2rem;
+}
+body .container .right .sign-up-container .input-container p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: gray;
+}
+body .container .right .sign-up-container .input-container input {
+  font-size: 1.1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0rem;
+  border-bottom: 1px solid rgb(180, 178, 178);
+}
+body .container .right .sign-up-container .input-container input input::placeholder {
+  color: rgb(180, 178, 178) !important;
+}
+body .container .right .accept {
+  display: flex;
+  margin: 2rem 0rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgb(180, 178, 178);
+}
+body .container .right .accept b {
+  color: gray;
+}
+body .container .right .accept input[type=checkbox]:checked {
+  background: gray;
+}
+body .container .right .buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .container .right .buttons-container button {
+  width: 50%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 0rem;
+  border-radius: 30px;
+  background: #902a9b;
+  background: linear-gradient(90deg, rgb(144, 42, 155) 0%, rgb(199, 87, 178) 50%, rgb(237, 83, 211) 100%);
+  color: white;
+}
+body .container .right .buttons-container .btn-bgd--none {
+  background: white !important;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

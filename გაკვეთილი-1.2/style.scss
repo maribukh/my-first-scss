@@ -1,0 +1,104 @@
+@import "./color.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  .container {
+    display: flex;
+    width: 100%;
+
+    button,
+    input,
+    .accept {
+      cursor: pointer;
+    }
+
+    .left {
+      width: 70%;
+      background-image: url(./4.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .right {
+      width: 30%;
+      padding: 2rem 2.3rem;
+
+      .title {
+        margin: 1rem 0rem;
+      }
+
+      .sign-up-container {
+        margin-top: 1.5rem;
+        .input-container {
+          margin-bottom: 2rem;
+          p {
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: gray;
+          }
+
+          input {
+            font-size: 1.1rem;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0.5rem 0rem;
+            border-bottom: 1px solid rgb(180, 178, 178);
+
+            input::placeholder {
+              color: rgb(180, 178, 178) !important;
+            }
+          }
+        }
+      }
+
+      .accept {
+        display: flex;
+        margin: 2rem 0rem;
+        align-items: center;
+        gap: 0.5rem;
+        color: rgb(180, 178, 178);
+
+        b {
+          color: gray;
+        }
+
+        input[type="checkbox"]:checked {
+          background: gray;
+        }
+      }
+
+      .buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+          width: 50%;
+          border: none;
+          outline: none;
+          padding: 0.5rem 0rem;
+          border-radius: 30px;
+          background: #902a9b;
+          background: linear-gradient(
+            90deg,
+            rgba(144, 42, 155, 1) 0%,
+            rgba(199, 87, 178, 1) 50%,
+            rgba(237, 83, 211, 1) 100%
+          );
+          color: white;
+        }
+        .btn-bgd--none {
+          background: white !important;
+          color: black;
+        }
+      }
+    }
+  }
+}
